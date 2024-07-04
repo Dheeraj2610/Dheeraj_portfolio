@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: #000000;
+      }
+    .top{
+    /* background-image: url('https://img.freepik.com/free-vector/line-luxury-gradient-color-minimalist-style-wave_483537-3948.jpg');
+    background-repeat: no-repeat; */
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    margin-top: auto;
+  }
+ .overlay {
+  position: relative;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 100%;  
+  /* background-color: rgba(0, 0, 0, 0.507); */
+  height: 92vh;
+  }
+  .overlay h1{
+   margin-top: 30vh;
+    font-size: 5rem;
+    font-weight: bold;
+   text-align: left;
+   width: 100%;
+   text-align: center;
+  
+  }
+  
+  .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10vh;
+            flex-wrap: wrap;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+               
+                gap: 1px;
+            }
+            .nav-item{
+                text-align: center;
+            }
+        }
+
+      /* skills */
+ .sec_2 {
+    /* margin: 20px; */
+    padding: 0 100px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.skills {
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+   
+}
+@media (max-width: 768px) {
+    .sec_2{
+        
+        padding: 30px;
+    }
+    
+  
+}
+
+.skills h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.columns {
+    display: flex;
+    gap: 50px;
+   
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #000000;
+    border: 1px solid white;
+    /* border-radius: 13px; */
+    padding: 3px;
+    position: relative;
+    height: 20px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #2a6a39;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.sec_3 {
+    padding: 20px 100px; /* Adjust padding as needed */
+    background-color: #000000;
+    color: aliceblue;
+    margin-top: 100px;
+    
+}
+
+.education {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+   
+    
+}
+
+.sec_3 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    
+}
+@media (max-width: 768px) {
+    .sec_3{
+        
+        padding: 30px;
+    }
+   
+  
+}
+    
+
+.degree {
+    background: rgba(18, 19, 19, 0.426);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+   
+    text-align: left;
+    position: relative;
+}
+
+.degree-header {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.degree-header h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.degree-header p {
+    margin: 5px 0;
+    color: #999;
+}
+
+.degree-header .year {
+    font-style: italic;
+    color: #999;
+}
+/* projects */
+.sec_4 {
+  padding: 20px 100px;
+    background-color: #000000;
+    flex-wrap: wrap;
+    
+   
+}
+
+.sec_4 h1 {
+  font-size: 3rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.card {
+    background: rgba(73, 73, 73, 0.289);
+    color: aliceblue;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+   
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: aliceblue;
+}
+
+.btn-primary {
+    margin-left: 60px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+@media (max-width: 768px) {
+    
+       .sec_4{
+        padding: 30px;
+       }
+       
+       .card{
+        width: 100%;
+       }
+       .card-title{
+        text-align: center;
+       }
+       .btn {
+        margin-left: 100px;
+       }
+}
+/* #footer */
+.footer {
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            flex-wrap: wrap;
+          
+        }
+
+        .footer h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .footer .contact-info {
+            font-size: 16px;
+           
+        }
+
+        .footer .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .footer .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 10px 0;
+        }
+
+        .footer .social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .footer .social a:hover {
+            color: #007bff;
+        }
+
+        .footer hr {
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        .footer .copyright {
+            text-align: center;
+            color: #999;
+        }
+        @media (max-width: 768px){
+            .footer{
+            width: 100%;
+            }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <section class="top" id="top">
+       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgba(0, 0, 0, 0.477);">
+            <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills_2">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educations">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="overlay">
+            <br><br>
+            <h1>Dheeraj Kumar S</h1><br>
+        </div>
+    </section>
+
+      <section class="sec_2" id="Skills_2">
+        <div class="skills">
+            <h1>Skills</h1>
+            <div class="columns">
+                <div class="column">
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Django</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+  <section class="sec_3" id="educations">
+    <h1>Education</h1>
+    <div class="education">
+        
+        <div class="degree">
+            <div class="degree-header">
+                <h2>Master of Computer Applications (MCA)</h2>
+                <p>Kristu Jyoti College of Management and Technology</p>
+                <p class="year">2022</p>
+            </div>
+        </div>
+        <div class="degree">
+            <div class="degree-header">
+                <h2>Bachelor of Computer Applications (BCA)</h2>
+                <p>ST Berchman's College</p>
+                <p class="year">2020</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+<section class="sec_4" id="projects">
+  <h1>Projects</h1>
+  <div class="card-container">
+      <div class="card">
+          <img class="card-img-top" src="image/tution__home.png" alt="Project 1 image">
+          <div class="card-body">
+              <h5 class="card-title">Tution Center Management</h5>
+              <p class="card-text">A web based educational platform featuring admin, Teacher, and student modules, build using Django, HTML, CSS, MYSQL</p>
+              <a href="https://link-to-project1.com" class="btn btn-primary">View Project</a>
+          </div>
+      </div>
+      <div class="card">
+          <img class="card-img-top" src="image/ware.png" alt="Project 2 image">
+          <div class="card-body">
+              <h5 class="card-title">Warehouse Management</h5>
+              <p class="card-text">A web based application to sell and purchase items build using Django, HTML, CSS, MYSQL, javascript, Bootstrap</p>
+              <a href="https://link-to-project2.com" class="btn btn-primary">View Project</a>
+          </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="image/amazon.png" alt="Project 2 image">
+        <div class="card-body">
+            <h5 class="card-title">Amazon Clone</h5>
+            <p class="card-text">A comprehensive web application mimicking Amazon's core functionalities using HTML, CSS, JavaScript, and Bootstrap.</p>
+            <a href="https://master--amazondk.netlify.app/" class="btn btn-primary">View Project</a>
+        </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="image/kerala.png" alt="Project 2 image">
+      <div class="card-body">
+          <h5 class="card-title">Kerala First</h5>
+          <p class="card-text">A robust Learning Management System (LMS) developed using HTML, CSS, JavaScript, and Bootstrap</p>
+          <a href="https://link-to-project2.com" class="btn btn-primary">View Project</a>
+      </div>
+  </div>
+  
+      <!-- Add more cards as needed -->
+  </div>
+  
+<footer class="footer" id="footer">
+  <h1>Contact Details</h1>
+  <div class="contact-info">
+    <p><strong>Dheeraj Kumar S</strong></p>
+      <p><strong>Phone:</strong> +91 9496791108</p>
+      <p><strong>Email:</strong> <a href="mailto:dheerajks.2610@gmail.com">dheerajks.2610@gmail.com</a></p>
+      <p><strong>Address:</strong> Kottayam, Kerala</p>
+      
+  </div>
+  <div class="social">
+      <a href="https://www.facebook.com/yourprofile" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com/yourprofile" target="_blank">
+          <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dheeraj-kumar-s/" target="_blank">
+          <i class="fab fa-linkedin-in"></i> 
+      </a>
+      <a href="https://github.com/Dheeraj2610" target="_blank">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:dheerajks.2610@gmail.com">
+          <i class="fas fa-envelope"></i>
+      </a>
+  </div>
+  <hr>
+  <div class="copyright">
+      <span>Copyrights © 2024 owned by Dheeraj Kumar S</span>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
