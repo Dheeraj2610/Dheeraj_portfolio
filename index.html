@@ -67,14 +67,8 @@
     flex-wrap: wrap;
    
 }
-@media (max-width: 768px) {
-    .sec_2{
-        
-        padding: 30px;
-    }
-    
-  
-}
+
+
 
 .skills h1 {
     font-size: 3rem;
@@ -93,7 +87,16 @@
     margin-right: 10px;
     flex-wrap: wrap;
 }
-
+@media (max-width: 768px) {
+    .sec_2 {
+        padding: 30px;
+    }
+    .columns {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+}
 .column:last-child {
     margin-right: 0;
 }
@@ -279,7 +282,9 @@
        .sec_4{
         padding: 30px;
        }
-       
+       .sec_4 h1 {
+        margin-left: 25%;
+       }
        .card{
         width: 100%;
        }
